@@ -7,6 +7,7 @@ import CreatePost from "./components/blog/CreatePost";
 import ViewPost from "./components/blog/Viewpost";
 import PostListItem from "./components/blog/PostListItem";
 import Register from "./components/auth/register";
+import Login from "./components/auth/Login";
 
 const router = createBrowserRouter([
     { path: '/', element: <App/> },
@@ -16,7 +17,8 @@ const router = createBrowserRouter([
     {path:'crud',element:<Crud/>},
     {path:'delete',element:<PostListItem/>},
     {path:'view',element:<ViewPost/>},
-    { path: 'register', element:<Register/>}
+    { path: 'register', element:<Register/>},
+    {path:'login',element:<Login/>},
 ]);
 
 export default router;

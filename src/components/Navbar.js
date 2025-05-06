@@ -44,6 +44,17 @@ data-target="#navbarNav" aria-controls="navbarNav"aria-expanded="false"
                         Register
                     </NavLink>
                     </li>
+                    <li className="nav-item">
+                    <NavLink 
+                    to={"/login"} 
+                    className={
+                        'nav-link '+
+                        (status => status.isActive ? 'active' : '')
+                    } 
+                    >
+                        Login
+                    </NavLink>
+                    </li>
             </ul>
         </div>
     </nav>;
